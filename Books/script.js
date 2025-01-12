@@ -52,11 +52,11 @@ function updateSliderPosition() {
     imagesWrapper.style.transform = `translateX(${offset}px)`;
 }
 prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+    currentIndex = (currentIndex === 0) ? totalSlides - 3 : currentIndex - 3;
     updateSliderPosition();
 });
 nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalSlides;
+    currentIndex = (currentIndex + 3) % totalSlides;
     updateSliderPosition();
 });
 window.addEventListener('resize', updateSliderWidth);
